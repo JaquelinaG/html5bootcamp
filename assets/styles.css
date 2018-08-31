@@ -60,3 +60,22 @@ caption {
 #signupform li {margin:10px; list-style: none;}
 #signupform input  {margin-left:45px; text-align: left;}
 #signupform textarea {margin-left:10px; text-align: left;}
+
+.header{
+  text-align: center;
+  font-size: 46px;
+}
+
+.footer{
+  text-align: right;
+  font-size: 10px
+}
+
+.content{
+  text-align: left;
+  font-size: 14;  
+}
+
+.navigation{
+  font-size: 12;
+}
