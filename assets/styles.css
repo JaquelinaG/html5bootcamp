@@ -1,11 +1,46 @@
 body{
     background:#ccc;
     color:#000;
-    font-family: helvetica, arial, sans-serif;
+    font-family: calibri, helvetica, arial, sans-serif;
   }
 
-  ol li{
-      list-style-type: square;
+  ul, ol {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li{
+      list-style-type: square;      
+      margin-left: 1em;
+  }
+
+  .rss {
+    margin: 5px 5px 0 5px;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+  }
+  
+  .rss li {
+    background: #fff url("Media/list_flat.png") 0 3px no-repeat;
+    margin: 0 2% 0 0;
+    padding: 0 0 5px 15px;
+    display: inline-block;
+    width: 40%;    
+  }
+
+  #menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu li {
+    display: inline;
+    padding: 0 1em 0 0;
+  }
+
+  a {
+    text-decoration: underline;
   }
 
   a:link {
