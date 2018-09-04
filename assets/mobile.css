@@ -34,7 +34,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 99rem;
+    max-width: 55rem;
     width: 99rem;
 }
 
@@ -752,13 +752,7 @@ body.body-dashboard .new-collection-button {
     font-weight: bold
 }
 
-.pen-and-post-wrap {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.pen-and-post-wrap .new-button {
+.new-button {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1
@@ -5875,7 +5869,7 @@ body.room-professor .main-header {
     border-bottom-color: #9e53d7
 }
 
-.pen-title-area {
+.title-area {
     padding: 10px 15px 0 15px;
     -webkit-flex-shrink: 1;
     -ms-flex-negative: 1;
@@ -5889,26 +5883,26 @@ body.room-professor .main-header {
     display: flex
 }
 
-.pen-title-area .icon-codepen-box {
+.title-area .icon-codepen-box {
     fill: white;
     width: 25px;
     height: 25px;
     margin-right: 10px
 }
 
-.pen-title-area .pen-title-text {
+.title-area .title-text {
     width: 100%;
     min-width: 0
 }
 
-.pen-title-area .pen-title {
+.title-area .pen-title {
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
     width: 100%;
     font-size: 1.3rem;
     margin: 0 0 1px 0
 }
 
-.pen-title-area .pen-title input[type='text'] {
+.title-area .pen-title input[type='text'] {
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
     font-size: 1.3rem;
     background: none;
@@ -5920,11 +5914,11 @@ body.room-professor .main-header {
     width: 100%
 }
 
-body.details .pen-title-area .pen-title {
+body.details .title-area .pen-title {
     font-size: 1.6rem
 }
 
-.pen-title-area .pen-title-link {
+.title-area .title-link {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -5933,7 +5927,7 @@ body.details .pen-title-area .pen-title {
     color: inherit
 }
 
-.pen-title-area .by {
+.title-area .by {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -5943,39 +5937,39 @@ body.details .pen-title-area .pen-title {
     color: #9396A4
 }
 
-.pen-title-area .by .pen-owner-link {
+.title-area .by .pen-owner-link {
     color: white;
     font-size: 0.9rem;
     text-transform: none;
     letter-spacing: 0
 }
 
-.pen-title-area .by .badge-pro {
+.title-area .by .badge-pro {
     top: -1px
 }
 
-body.details .pen-title-area .by {
+body.details .title-area .by {
     display: none
 }
 
-.pen-title-area .pen-title-link,
-.pen-title-area .pen-owner-link {
+.title-area .title-link,
+.title-area .pen-owner-link {
     transition: opacity 200ms
 }
 
-.pen-title-area .pen-title-link:hover,
-.pen-title-area .pen-title-link:focus,
-.pen-title-area .pen-owner-link:hover,
-.pen-title-area .pen-owner-link:focus {
+.title-area .title-link:hover,
+.title-area .title-link:focus,
+.title-area .pen-owner-link:hover,
+.title-area .pen-owner-link:focus {
     opacity: 0.8
 }
 
-.pen-title-area.editing .pen-title-link,
-.pen-title-area.editing .edit-pen-title {
+.title-area.editing .title-link,
+.title-area.editing .edit-pen-title {
     display: none
 }
 
-body.details .pen-title-area {
+body.details .title-area {
     padding-top: 18px
 }
 
@@ -6039,8 +6033,6 @@ body.show-run-button .run {
     }
 }
 
-
-
 .fullpage {
     padding-bottom: 0px
 }
@@ -6090,3 +6082,70 @@ html.oldie #result-iframe-wrap {
     display: block;
     position: static
 }
+
+.column { margin-bottom: 1.5rem; }
+  
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }
+}
+
+.mobile-first .column {
+    float: none;
+    margin-bottom: 1rem;
+  }
+
+.grid .column { margin-bottom: 1rem; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+  
+@media (min-width: 40rem) {
+  .row-example .row { padding: 1rem 0 0 0; }
+}
+
+.row-example .container {
+    border: 2px dashed rgba(255,255,255,0.2);
+    padding: 1rem;
+  }
+  
+  .row-example .row {
+    background: rgba(225,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .row-example .row:last-of-type { margin-bottom: 0; }
+
+  .grid .container {
+    border: 2px dashed rgba(255,255,255,0.3);
+    padding: 1rem 1rem 0 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .grid .container { padding: 1rem 0 0 0; }
+  }
+

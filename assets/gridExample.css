@@ -93,7 +93,7 @@
   section:first-of-type { border-top: none; }
   
   @media (min-width: 40rem) {
-    section { padding: 4rem 0; }
+    section { padding: 3rem 0; }
   }
   
   /* Mobile First Grid
@@ -213,7 +213,7 @@
     font-size: 1rem;
     font-weight: 600;
     padding: 0.7rem 1.5rem;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     white-space: nowrap;
   }
   
@@ -335,6 +335,12 @@
   }
   
   .row-example .row:last-of-type { margin-bottom: 0; }
+  .row .footer {
+    padding: 1rem;
+    text-align: center;
+    border-top: #555;
+    border-top-style: double;
+  }
   
   @media (min-width: 40rem) {
     .row-example .row { padding: 1rem 0 0 0; }
