@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sign up</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sign up</title>    
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     <script type="application/javascript" src="leaving.js"></script>
 </head>
@@ -17,7 +17,7 @@
     <div class="container">
         <h1>Sign up</h1>
         <form action="#" method="POST" id="signupform" class="col-xs-12 form-horizontal">
-            <input type="hidden" name="redirect" value="index.html" />            
+            <input type="hidden" name="redirect" value="mobile.html" />            
             <div class="col-xs-9 form-group">
                 <label for="firstname" class="col-xs-3 text-right control-label">First name:</label>
                 <div class="col-xs-6">
@@ -65,7 +65,13 @@
                 <label for="bio" class="col-xs-3 text-right control-label">Bio:</label>
                 <div class="col-xs-6">
                     <textarea rows="5" cols="60"  name="bio" id="bio" class="col-6 form-control"></textarea>
-                    </div>
+                </div>
+            </div>
+            <div class="col-xs-9 form-group">
+                <label for="password" class="col-xs-3 text-right control-label">Password:</label>
+                <div class="col-xs-6">
+                    <input type="password" name="password" id="password" required class="col-xs-3 form-control">
+                </div>
             </div>
             <br>
             <br>

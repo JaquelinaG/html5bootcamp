@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Example of responsive Web Page with HTML5 y CSS ">
+    <meta name="keywords" content="html5, css, responsive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+    <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg"
+        color="#111">
+
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+    <!-- <link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/fullpage/fullpage-7e3e7e96f6ec106388eb04ab5b4d32db44536be2c540d9773019d86fe7d88b82.css"> -->
+    <title>Mobile Example for HTML5 y CSS</title>
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header class="main-header" id="main-header">
+
+        <div class="header-chunk pen-title-area">
+            <img src="Media/html5-css-javascript.png" class="icon-codepen-box" width="25px" height="25px">
+            <div class="pen-title-text">
+                <h1 class="pen-title-link h1">Mobile Example for HTML, CSS and Javascript</h1>
+            </div>
+        </div>
+
+        <div class="header-chunk primary-actions secondary-nav">
+
+            <button id="run" class="button button-editor-outline button run" title="Com/Ctrl - Shift - 5 to Run">
+                <svg class="icon-run" width="16" height="16">
+                    <use xlink:href="#rerun"></use>
+                </svg>
+                Run
+            </button>
+
+            <div class="view-switcher is-dropdown" id="view-switcher" data-dropdown-position="right" role="navigation">
+
+                <h3>Open this Pen in:</h3>
+                <nav class="link-list">
+
+                    <a id="editor-link" href="https://codepen.io/morganfeeney/pen/qtkKy" class="view-switcher-row editor-link">
+                        Editor View
+                        <span class="view-meta">
+                            /pen/
+                            <span data-href="http://blog.codepen.io/documentation/views/editor-view/" class="learn-more inline-q">
+                                <svg class="icon-help" width="13" height="13">
+                                    <use xlink:href="#help"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </a>
+
+                    <a id="details-link" href="https://codepen.io/morganfeeney/details/qtkKy" class="view-switcher-row details-link">
+                        Details View
+                        <span class="view-meta">
+                            /details/
+                            <span data-href="http://blog.codepen.io/documentation/views/details-view/" class="learn-more inline-q">
+                                <svg class="icon-help" width="13" height="13">
+                                    <use xlink:href="#help"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </a>
+
+                    <a id="full-page-link" href="https://codepen.io/morganfeeney/full/qtkKy" class="view-switcher-row full-page-link">
+                        Full Page
+                        <span class="view-meta">
+                            /full/
+                            <span data-href="http://blog.codepen.io/documentation/views/full-page-view/" class="learn-more inline-q">
+                                <svg class="icon-help" width="13" height="13">
+                                    <use xlink:href="#help"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </a>
+
+                    <a id="pres-link" href="https://codepen.io/morganfeeney/pres/qtkKy" class="view-switcher-row upsell pres-link" data-url="/ajax/upgrades/presentation_mode"
+                        data-upsell-type="general">
+                        <span class="badge badge-pro">PRO</span>
+                        Presentation Mode
+                        <span class="view-meta">
+                            /pres/
+                            <span data-href="http://blog.codepen.io/documentation/pro-features/presentation-mode/" class="learn-more inline-q">
+                                <svg class="icon-help" width="13" height="13">
+                                    <use xlink:href="#help"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </a>
+
+                    <a href="https://app.crossbrowsertesting.com/livetests/run?url=https%3A%2F%2Fcodepen.io%2Fmorganfeeney%2Ffull%2FqtkKy" class="view-switcher-row view-switcher-cbt">
+                        Open on CrossBrowserTesting →
+                    </a>
+
+                </nav>
+
+                <hr>
+
+                <h3>Direct Code Links:</h3>
+
+                <div class="share-static share-section">
+                    <a target="_blank" rel="noopener" href="https://codepen.io/morganfeeney/pen/qtkKy.html">.html</a>
+                    <a target="_blank" rel="noopener" href="https://codepen.io/morganfeeney/pen/qtkKy.css">.css</a>
+                    <a target="_blank" rel="noopener" href="https://codepen.io/morganfeeney/pen/qtkKy.js">.js</a>
+                </div>
+            </div>
+
+            <div class="signup-and-login">
+                <a href="loginForm.html" id="login-button" class="button button-editor-solid login-button">Log In</a>
+                <a href="signupForm.html" class="button button-editor-solid signup-button">Sign Up</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="gallery-grid">
+        <div class="one-third">
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank" title="Learning HTML5 at W3School">
+                <span class="screen">
+                    <p class="title">Learning HTML5</p>
+                </span>
+                <img src="Media/HTML5.png">
+            </a>
+        </div>
+        <div class="one-third">
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank" title="Learning CSS at W3School">
+                <span class="screen">
+                    <p class="title">Learning CSS</p>
+                </span>
+                <img src="Media/CSS3.png">
+            </a>
+        </div>
+        <div class="one-third">
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank" title="Learning Javascript at W3School">
+                <span class="screen fade-in">
+                    <p class="title">Learning Javascript</p>
+                </span>
+                <img src="Media/javascrip.png">
+            </a>
+        </div>
+        <a class="cta" href="media.html" target="_blank">Click to see image and video</a>
+    </div>
+
+    <div>
+        <footer class="footer">
+            <div class="by">
+                Design by
+                <a class="pen-owner-link" href="https://github.com/JaquelinaG/">
+                    Jaquelina Giuliani
+                </a>
+            </div>
+        </footer>
+    </div>        
+
+</body>
