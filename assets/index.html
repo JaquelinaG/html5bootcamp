@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Basics of HTML and CSS</title>
+
+    <meta name="description" content="HTML for creating Web Pages with CSS styles">
+    <meta name="keywords" content="html, css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">    
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script type="application/javascript" src="leaving.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="col-xs-12 header">
+            <h1>HTML y CSS</h1>
+        </header>
+        
+        <nav class="col-xs-2 navigation">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active">
+                    <a href="index.html" title="Home" >
+                        <strong>Home</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="expenses.html" >Expenses site</a>
+                </li>
+                <li>
+                    <a href="media.html">Media Elements site</a>
+                </li>
+                <li>
+                    <a href="signupForm.html">Sign up Form</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="todo" class="col-xs-7 col-xs-offset-1 content">
+            <h1 class="text-center">My todo list</h1>
+            <ol>
+                <li>Read Bootcamp Topics</li>
+                <li>Go to the Supermarket</li>
+            </ol>
+            <p>Before training, I should wash de team-shirt</p>
+            <ol start="3">
+                <li>Go to voleyball training</li>
+            </ol>
+        </section>
+        <aside class="col-xs-2 sidebar">
+            <p>Contact Information</p>
+        </aside>
+        <div class="footer">
+            <footer class="col-xs-12">Web UI BootCamp Globant 2018</footer>
+        </div>
+        
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

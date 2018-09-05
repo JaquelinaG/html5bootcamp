@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Example of responsive Web Page with HTML5 y CSS ">
+    <meta name="keywords" content="html5, css, responsive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+
+    <title>Mobile Example for HTML5 y CSS</title>
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header class="main-header" id="main-header">
+
+        <div class="header-chunk title-area">
+            <img src="Media/html5-css-javascript.png" class="icon-codepen-box" width="25px" height="25px">
+            <div class="title-text">
+                <h1 class="title-link h1">Mobile Example for HTML, CSS and Javascript</h1>
+            </div>
+        </div>
+
+        <div class="header-chunk primary-actions secondary-nav">
+
+            <div class="signup-and-login">
+                <a href="loginForm.html" id="login-button" class="button button-editor-solid login-button">Log In</a>
+                <a href="signupForm.html" class="button button-editor-solid signup-button">Sign Up</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="gallery-grid">
+        <article class="one-third">
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank" title="Learning HTML5 at W3School">
+                <span class="screen">
+                    <p class="title">Learning HTML5</p>
+                </span>
+                <img src="Media/HTML5.png">
+            </a>
+        </article>
+        <article class="one-third">
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank" title="Learning CSS at W3School">
+                <span class="screen">
+                    <p class="title">Learning CSS</p>
+                </span>
+                <img src="Media/CSS3.png">
+            </a>
+        </article>
+        <article class="one-third">
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank" title="Learning Javascript at W3School">
+                <span class="screen fade-in">
+                    <p class="title">Learning Javascript</p>
+                </span>
+                <img src="Media/javascrip.png">
+            </a>
+        </article>
+        <a class="cta" href="media.html" target="_blank">Click to see image and video</a>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="by">
+            Design by
+            <a class="owner-link" href="https://github.com/JaquelinaG/">
+                Jaquelina Giuliani
+            </a>
+        </div>
+    </footer>
+
+</body>
