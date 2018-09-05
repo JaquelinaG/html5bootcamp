@@ -215,6 +215,8 @@
     padding: 0.7rem 1.5rem;
     /* vertical-align: middle; */
     white-space: nowrap;
+    /* float: left;
+    align-self: center; */
   }
   
   .button:hover {

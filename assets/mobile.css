@@ -32,12 +32,6 @@ body {
     -webkit-box-sizing: border-box;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 55rem;
-    width: 99rem;
-}
-
 .gallery-grid {
     clear: both;
     background-color: rgb(212, 207, 200);
@@ -124,8 +118,6 @@ p {
 .screen.fade-in .title {
     margin-left: 0;
 }
-
-.screen.fade-in:hover {}
 
 .cta {
     clear: both;
@@ -230,67 +222,6 @@ img {
     }
 }
 
-.more-link {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    transition: 0.2s
-}
-
-.more-link svg {
-    width: 16px;
-    height: 16px;
-    fill: white;
-    position: relative;
-    top: 3px;
-    padding: 2px;
-    transition: 0.2s
-}
-
-.more-link:hover svg,
-.more-link:focus svg {
-    fill: #ccc;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1)
-}
-
-.more-link.more-link-pens:hover,
-.more-link.more-link-pens:focus {
-    color: #8ee0ff
-}
-
-.more-link.more-link-pens svg {
-    fill: #0ebeff
-}
-
-.more-link.more-link-projects:hover,
-.more-link.more-link-projects:focus {
-    color: #ffeb8d
-}
-
-.more-link.more-link-projects svg {
-    fill: #FFDD40
-}
-
-.more-link.more-link-posts:hover,
-.more-link.more-link-posts:focus {
-    color: #84dfa1
-}
-
-.more-link.more-link-posts svg {
-    fill: #47cf73
-}
-
-.more-link.more-link-collections:hover,
-.more-link.more-link-collections:focus {
-    color: #d0a4ef
-}
-
-.more-link.more-link-collections svg {
-    fill: #ae63e4
-}
-
 .title-header {
     position: relative;
     margin: 40px 0 25px 0
@@ -304,10 +235,6 @@ img {
 
 .posts-title-header {
     border-bottom: 5px solid #47cf73
-}
-
-.pens-title-header {
-    border-bottom: 5px solid #0ebeff
 }
 
 .collections-title-header {
@@ -406,38 +333,6 @@ img {
     .main-header .logo {
         margin-right: 0
     }
-}
-
-.logo {
-    margin: 0;
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    margin-right: 16px
-}
-
-.logo .small-screen-logo {
-    display: block;
-    width: 30px;
-    height: 100%;
-    margin: 0 10px
-}
-
-.logo .small-screen-logo svg {
-    fill: white;
-    height: 100%;
-    width: 100%
-}
-
-.logo .large-screen-logo {
-    display: none;
-    font: 0/0 a;
-    background: url(https://static.codepen.io/assets/logos/codepen-logo-eccd67a3067908687f74b7725787a321b0a13ce18601ba839aaab2bd8df9d772.svg) no-repeat 18px 21px;
-    background-size: 138px 26px;
-    width: 180px;
-    height: 65px;
-    border: 0;
-    outline: 0
 }
 
 @media (min-width: 551px) {
@@ -683,10 +578,6 @@ body.explore-patterns .primary-nav .primary-patterns a::after {
     border-radius: 4px
 }
 
-.create-dropdown--pen-wrap {
-    display: block
-}
-
 .new-project-button,
 .new-post-button,
 .new-collection-button {
@@ -695,43 +586,6 @@ body.explore-patterns .primary-nav .primary-patterns a::after {
 
 body.body-dashboard .new-collection-button {
     display: none
-}
-
-.new-pen-button {
-    display: block
-}
-
-.new-pen-button svg {
-    fill: #0ebeff
-}
-
-.new-pen-button.border-bottom {
-    border-bottom: 1px solid #e2e3ee
-}
-
-.new-pen-from-template-label {
-    display: inline-block;
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: center;
-    color: #666b7b;
-    background: #fff
-}
-
-.new-pen-from-template-label>span {
-    font-size: 0.8rem
-}
-
-.new-pen-from-template-label>svg {
-    width: 13px;
-    height: 13px;
-    vertical-align: middle;
-    margin-left: 3px;
-    position: relative;
-    top: -1px;
-    fill: #0ebeff
 }
 
 .new-pen-from-template-label:hover,
@@ -750,7 +604,7 @@ body.body-dashboard .new-collection-button {
     background: #fff;
     color: #0ebeff;
     font-weight: bold
-}
+} */
 
 .new-button {
     -webkit-flex: 1;
@@ -5937,7 +5791,7 @@ body.details .title-area .pen-title {
     color: #9396A4
 }
 
-.title-area .by .pen-owner-link {
+.title-area .by .owner-link {
     color: white;
     font-size: 0.9rem;
     text-transform: none;
@@ -5953,14 +5807,14 @@ body.details .title-area .by {
 }
 
 .title-area .title-link,
-.title-area .pen-owner-link {
+.title-area .owner-link {
     transition: opacity 200ms
 }
 
 .title-area .title-link:hover,
 .title-area .title-link:focus,
-.title-area .pen-owner-link:hover,
-.title-area .pen-owner-link:focus {
+.title-area .owner-link:hover,
+.title-area .owner-link:focus {
     opacity: 0.8
 }
 
